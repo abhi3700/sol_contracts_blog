@@ -1,4 +1,11 @@
 {
+    "scripts": {
+        "build": "anchor build",
+        "pgid": "solana address -k target/deploy/blog-keypair.json",
+        "deploylocalnet": "anchor deploy --provider.cluster localnet",
+        "deploydevnet": "anchor deploy --provider.cluster devnet",
+        "deploymain": "anchor deploy --provider.cluster mainnet"
+    },
     "dependencies": {
         "@project-serum/anchor": "^0.20.1"
     },
